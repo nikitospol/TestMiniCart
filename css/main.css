@@ -1,0 +1,148 @@
+
+/* CART */
+.mini-cart {
+	position: absolute;
+	right: 50px;
+	top: calc(100%+50px);
+	width: 480px;
+	box-shadow: 0 -4px 10px rgba(0, 13, 84, 0.3);
+	background-color: white;
+	justify-content: space-around;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.mini-cart--visible {
+	z-index: 4;
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.mini-cart_header{
+	width: 100%;
+	max-width: 480px;
+	display: flex;
+	justify-content: flex-start;
+	border-bottom: 4px solid #006249;
+	padding: 10px;
+}
+.mini-cart_header h5 {
+	 margin-top: 10px;
+	text-align: center;
+}
+.mini-cart_header h5:first-child {
+	margin-top: 10px;
+	text-align: left;
+}
+
+.product-wrap {
+	display: flex;
+	height: 68px;
+	margin: 20px 0;
+	padding: 0 10px;
+	text-align: center;
+	align-items: center;
+}
+
+
+.mini-cart_top {
+	max-height: 323px;
+}
+
+.fa-solid {
+	font-size: 20px;
+	width: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.fa-xmark {
+	margin-left: 0;
+}
+.simplebar-track.simplebar-vertical {
+	margin: 10px 0;
+	right: 5px;
+	top: 20px;
+	bottom: 20px;
+	right: 5px;
+	border-radius: 5px;
+	width: 4px;
+	background: rgba(77, 77, 77, 0.1);
+}
+
+.mini-cart_bottom {
+
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding: 20px;
+	box-shadow: 0 -4px 10px rgba(0, 13, 84, 0.1);
+	background-color: white;
+}
+.mini-cart_txt {
+	font-size: 32px;
+	position: relative;
+	text-align: left;
+}
+
+
+
+.mini-cart--empty {
+	transform: scale(1);
+}
+.cart__btn {
+  position: relative;
+  width: 34px;
+  height: 40px;
+}
+.btn-reset {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+
+
+.priceTotalCurrent {
+	color: #fc94c2;
+	font-weight: 700;
+	font-size: 32px;
+}
+.btn-default {
+	margin-bottom: 20px;
+	background-color: #006249;
+	opacity: 0.9;
+	color: white;
+}
+.btn-default:hover {
+	background: rgba(252,148,195, .4);
+	color: black;
+}
+
+
+.product-mini {
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+}
+
+.product-mini img {
+	width: 68px;
+	height: 68px;
+	margin-right: 10px;
+}
+.product-mini span {
+	text-align: left;
+}
+.quantity {
+	display: flex;
+}
+.mini-cart p{
+	width: 480px;
+	display: block;
+	position: relative;
+	text-align: left;
+}
