@@ -119,9 +119,9 @@ function displayCart() {
 			productContainer.innerHTML +=`
 			<div class="product-wrap">
 				<div class="product-mini col-4">
-					<i class=" fa-solid fa-xmark " data-tag="${item.tag}"></i>
-					<img src="img/${item.tag}.jpg">
-					<span>${item.name}</span>
+					<i class=" fa-solid fa-xmark col-3" data-tag="${item.tag}"></i>
+					<img class="col-3" src="img/${item.tag}.jpg">
+					<span class="col-6">${item.name}</span>
 				</div>
 				<div class="mini-price col-3">¥${item.price}</div>
 				<div class="quantity col-2">

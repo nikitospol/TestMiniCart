@@ -180,7 +180,7 @@
 	.product-mini img {
 		width: 22px;
 		height: 22px;
-		margin-right: 2px;
+		margin: 0 5px;
 	}
 	.product-mini span {
 		font-size: calc(var(--sizeindex)*1.5);
@@ -188,7 +188,7 @@
 	}
 	.fa-solid {
 		font-size: calc(var(--sizeindex)*1.5);
-		margin: 0 5px;
+		margin: 0;
 	}
 	.mini-cart_header h5 {
 		font-size: calc(var(--sizeindex)*1.5);
