@@ -35,7 +35,9 @@ carts.forEach(btn => {
 		let product_item = products.find(x => x.id === parseInt(btn.dataset.id));
 		cartNumbers(product_item);
 		totalCost(product_item);
-		showCart();
+		if (window.matchMedia('(media:768px)').matches) {
+			showCart();
+		}
 	});
 });
 
@@ -226,6 +228,6 @@ onLoadCartNumbers();
 const miniCart = document.querySelector('.mini-cart');
 const miniCartBtn = document.querySelector('.shoppingcart');
 
- 
+
 miniCartBtn.addEventListener('click', () => { toggleCart(); });
 
